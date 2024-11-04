@@ -1,0 +1,196 @@
+/* local font hosting */
+@font-face {
+  font-display: swap;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../assets/fonts/roboto-v32-latin-regular.woff2") format("woff2"),
+    url("../assets/fonts/roboto-v32-latin-regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../assets/fonts/roboto-v32-latin-500.woff2") format("woff2"),
+    url("../assets/fonts/roboto-v32-latin-500.ttf") format("truetype");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../assets/fonts/roboto-v32-latin-700.woff2") format("woff2"),
+    url("../assets/fonts/roboto-v32-latin-700.ttf") format("truetype");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 900;
+  src: url("../assets/fonts/roboto-v32-latin-900.woff2") format("woff2"),
+    url("../assets/fonts/roboto-v32-latin-900.ttf") format("truetype");
+}
+
+/* general styling */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  color: #222;
+  font-family: "Roboto";
+  margin: 0;
+  padding: 0;
+}
+
+/* typography */
+.lies__title {
+  font-size: 48px;
+  font-weight: 900;
+  line-height: 60px;
+}
+
+.modal__inner-title {
+  margin-top: 0;
+}
+
+.lies__subtitle {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+.lies__desc,
+.modal__inner-text {
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.lies__list {
+  list-style: none;
+  padding: 5px 0 0 0;
+}
+
+.lies__list-item {
+  border-radius: 5px;
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 12px;
+  padding: 15px;
+}
+
+.lies__list-item--green {
+  background-color: #e5fdea;
+}
+.lies__list-item--yellow {
+  background-color: #fcfdd6;
+}
+.lies__list-item--blue {
+  background-color: #e5f9fe;
+}
+.lies__list-item--pink {
+  background-color: #fcf1fe;
+}
+
+/* layout */
+.lies__img {
+  width: 100%;
+}
+
+.lies {
+  margin: 0 auto;
+  width: 400px;
+}
+
+/* modal */
+.modal {
+  background-color: #212529;
+  border-radius: 5px;
+  box-shadow: 0px 0px 6px 2px #666;
+  color: whitesmoke;
+  height: 420px;
+  width: 350px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  margin: auto;
+}
+
+.modal__inner {
+  margin: 0 auto;
+  width: 290px;
+}
+
+.modal__inner-loading {
+  text-align: center;
+}
+
+/* modal buttons */
+.modal__close-container {
+  margin: 9px;
+  text-align: right;
+}
+
+.modal__btn-close {
+  background-color: transparent;
+  border: 1px solid transparent;
+  color: whitesmoke;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.modal__btn-close:hover,
+.modal__btn-close:active {
+  color: red;
+  cursor: pointer;
+}
+
+.modal__btn-close:disabled {
+  color: whitesmoke;
+  cursor: not-allowed;
+  opacity: 0.2;
+}
+
+.modal__btn-choice {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  padding: 8px 16px;
+}
+
+.modal__btn {
+  cursor: pointer;
+  padding: 10px 24px;
+}
+
+/* modal input */
+input {
+  border-radius: 3px;
+  border: 1px solid #212529;
+  margin-top: 10px;
+  padding: 10px;
+  width: 100%;
+}
+
+/* modal after submit */
+.loading {
+  margin-top: 10px;
+  width: 100%;
+}
+
+.modal__display-name {
+  color: fuchsia;
+}
+
+.modal__text {
+  height: 140px;
+  line-height: 23px;
+  margin-bottom: 0;
+}
