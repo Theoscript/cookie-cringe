@@ -124,6 +124,7 @@ body {
   top: 0;
   margin: auto;
   */
+  display: none;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -176,7 +177,15 @@ body {
   gap: 10px;
 }
 
-.modal__btn {
+.modal__btn-choice-reverse {
+  flex-direction: row-reverse;
+}
+
+.modal__btn,
+.modal__btn:disabled {
+  background: buttonface;
+  border-color: buttonborder;
+  color: buttontext;
   cursor: pointer;
   padding: 10px 24px;
 }
