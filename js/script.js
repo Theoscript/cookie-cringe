@@ -73,7 +73,7 @@ modalForm.addEventListener("submit", function (submit) {
 
   document.querySelector(".modal__inner-form").style.display = "none";
   modalText.innerHTML = `<div class="modal__inner-loading">
-                          <img src="../assets/images/loading.svg" class="loading" />
+                          <img src="/assets/images/loading.svg" class="loading" />
                           <p id="modal__inner-upload-text">
                             Uploading <span class="modal__display-name">${userNameSurname}'s</span> information to the dark web 😈
                           </p>
