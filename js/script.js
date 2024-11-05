@@ -46,13 +46,14 @@ const prices = [
   74.99, 150.0, 85.5, 99.99, 135.75, 120.25, 195.0, 65.49, 180.99, 52.5,
 ];
 
+const article = document.querySelector(".lies");
 const modal = document.querySelector("#modal");
-const modalBtnClose = document.querySelector("#modal__btn-close");
-const modalForm = document.querySelector(".modal__inner-form");
 const modalText = document.querySelector("#modal__inner-text");
-const modalBtnDecline = document.querySelector("#modal__btn-decline");
+const modalForm = document.querySelector(".modal__inner-form");
 
+// makes the modal appear after 3.5 seconds
 setTimeout(function () {
+  article.style.filter = "blur(3px)";
   /**
    * setting the modal to display block is more
    * consistent in layout and cross browser functionality
@@ -61,16 +62,12 @@ setTimeout(function () {
   modal.style.display = "block";
 }, 3500);
 
-// basically useless at this point because we disabled it
-modalBtnClose.addEventListener("click", () => {
-  modal.style.display = "none";
-});
-
 modalForm.addEventListener("submit", function (submit) {
   submit.preventDefault();
   const modalFormData = new FormData(modalForm);
   const userNameSurname = modalFormData.get("userNameSurname");
 
+  document.querySelector(".modal__inner-title").style.textAlign = "center";
   document.querySelector(".modal__inner-form").style.display = "none";
   /**
    * for the file path below think in terms of your index.html file
@@ -80,7 +77,7 @@ modalForm.addEventListener("submit", function (submit) {
   modalText.innerHTML = `<div class="modal__inner-loading">
                           <img src="./assets/images/loading.svg" class="loading" />
                           <p id="modal__inner-upload-text">
-                            Uploading <span class="modal__display-name">${userNameSurname}'s</span> information to the dark web 😈
+                            Uploading the information of <span class="modal__display-name">${userNameSurname}</span> to the dark web
                           </p>
                         </div>`;
 
@@ -99,13 +96,8 @@ modalForm.addEventListener("submit", function (submit) {
 
   setTimeout(() => {
     modal.style.display = "none";
+    article.style.filter = "blur(0)";
   }, 6500);
-});
-
-modalBtnDecline.addEventListener("mouseover", () => {
-  document
-    .querySelector(".modal__btn-choice")
-    .classList.toggle("modal__btn-choice-reverse");
 });
 
 function randomIndex(arr) {

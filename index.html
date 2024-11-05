@@ -11,64 +11,59 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
       rel="stylesheet"
     />
-    <!-- css link -->
+    <!-- css links -->
+    <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <main class="lies">
       <section class="lies__container">
         <h1 class="lies__title">
-          Learning to code? This is the most important thing you will ever read!
+          Learning to code? I've got just the thing you need!
         </h1>
 
         <ul class="lies__list">
-          <li class="lies__list-item lies__list-item--green">
-            💰 Land a job with a 6 figure salary
-          </li>
-          <li class="lies__list-item lies__list-item--yellow">
-            💻 Master JavaScript in 3 hours
-          </li>
           <li class="lies__list-item lies__list-item--blue">
-            ⚛️ Learn React in 10 minutes
+            💻 Master JS and TS within 3 hours
           </li>
           <li class="lies__list-item lies__list-item--pink">
-            ☕ Be a NodeJS Dev by lunchtime
+            ⚛️ Learn React within 1 hour
+          </li>
+          <li class="lies__list-item lies__list-item--yellow">
+            ☕ Transition to full-stack by lunchtime
+          </li>
+          <li class="lies__list-item lies__list-item--green">
+            💸 Earn 6 figures monthly by freelancing
           </li>
         </ul>
 
         <h2 class="lies__subtitle">
-          My subliminal learning technique worked for Mark Zuckerberg and Albert
-          Einstein, and it can work for you!
+          If my techniques aided Zuckerberg, Bezos, and Musk why can't it aid
+          you?
         </h2>
         <img src="./assets/images/bugatti.jpg" class="lies__img" />
         <p class="lies__desc">
-          Want a great job in tech? Want a six-figure salary? Then you have come
-          to the right place. I am going to tell you all you need to know to get
-          all of that and much more, without you lifting a finger. You can learn
-          passively. Just sit back, close your eyes, and let the sound of my
-          voice make the code sink deep into your brain.
+          My techniques will guide you to earning a six-figure salary monthly
+          via freelancing. Sounds too good to be true? No because it isn't. Mark
+          Zuckerberg, Jeff Bezos, and Elon Musk have personally interacted with
+          me regarding these techniques.
         </p>
       </section>
     </main>
 
     <div class="modal" id="modal">
-      <div class="modal__close-container">
-        <button class="modal__btn-close" id="modal__btn-close" disabled>
-          X
-        </button>
-      </div>
       <div class="modal__inner" id="modal__inner">
         <h2 class="modal__inner-title">We ❤️ Your Data!</h2>
         <p class="modal__inner-text" id="modal__inner-text">
-          We have a strict policy on tracking and spamming: we'll definitely
-          track you, and we'll definitely spam you. To use this site, enter your
-          name and email address and accept our ridiculous terms and conditions.
+          We have a strict no-tracking and no-spamming policy. Your information
+          will never be sold.
         </p>
-        <form action="#" method="post" class="modal__inner-form">
+        <form class="modal__inner-form">
           <input
             type="text"
             name="userNameSurname"
             id="form__user-name-surname"
+            class="form__input"
             placeholder="John Doe"
             aria-label="Full Name"
             required
@@ -77,6 +72,7 @@
             type="email"
             name="userEmail"
             id="form__user-email"
+            class="form__input"
             placeholder="johndoe@mail.com"
             aria-label="Email"
             required
@@ -84,14 +80,6 @@
           <div class="modal__btn-choice" id="modal__btn-choice">
             <button type="submit" class="modal__btn" id="modal__btn-accept">
               Accept
-            </button>
-            <button
-              type="button"
-              class="modal__btn"
-              id="modal__btn-decline"
-              disabled
-            >
-              Decline
             </button>
           </div>
         </form>
