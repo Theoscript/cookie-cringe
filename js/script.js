@@ -1,50 +1,5 @@
-const darkWebUsernames = [
-  "ShadowBroker99",
-  "Crypt0Freak",
-  "HexedOutlaw",
-  "NightShadeX",
-  "PhantomCipher",
-  "TorWanderer",
-  "0xDEADB33F",
-  "ObsidianSoul",
-  "DeepDiver21",
-  "SilentSpectre",
-  "ByteBandit",
-  "GhostProtocol",
-  "LucidDreamer",
-  "VirusVendetta",
-  "HexHunter",
-  "DarkMatter32",
-  "MidnightViper",
-  "SpectralShift",
-  "CipherNinja",
-  "EncryptedReaper",
-  "QuantumGh0st",
-  "N3cr0M4ncer",
-  "Cyb3rV01d",
-  "V1rusW0rm",
-  "NihilistNemesis",
-  "ShadowCrawler",
-  "VenomousVex",
-  "NeonHavoc",
-  "H4x0rHaven",
-  "TheOnyxWraith",
-  "GlitchGoblin",
-  "An0n0maly",
-  "CrypticSpectre",
-  "ZeroDarkEther",
-  "SpiderByte",
-  "SpectreVigil",
-  "BinaryBanshee",
-  "Oblivion13",
-  "FallenHex",
-  "H4untedH0st",
-  "PhreakPhantom",
-];
-
-const prices = [
-  74.99, 150.0, 85.5, 99.99, 135.75, 120.25, 195.0, 65.49, 180.99, 52.5,
-];
+import { darkWebUsernames } from "./data.js";
+import { prices } from "./data.js";
 
 const article = document.querySelector(".lies");
 const modal = document.querySelector("#modal");
